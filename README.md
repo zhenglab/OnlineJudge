@@ -10,3 +10,13 @@
 - 用户管理 `/admin/#user/user_list` 编辑用户选择打开 AppKey
 
 参见：https://github.com/QingdaoU/OnlineJudgeDeploy#准备安装文件
+
+启用smtp邮件服务  
+登陆邮箱   
+- 登录邮箱后，点击设置  
+- 选择账号tab，找到温馨提示：登录第三方客户端时，密码框请输入“授权码”进行验证。生成授权码。
+
+修改`custom_settings.py`  
+端口使用25，TLS为True  
+`"url":`服务器地址  
+参见：https://github.com/QingdaoU/OnlineJudge/wiki/SMTP
