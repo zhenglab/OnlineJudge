@@ -1,0 +1,1 @@
+$docker run image_name apt-get install -y app_name

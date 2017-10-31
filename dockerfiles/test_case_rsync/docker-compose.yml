@@ -1,0 +1,10 @@
+oj_rsync_slave:
+    image: registry.aliyuncs.com/v-image/oj_rsync
+    volumes:
+        - /data/OnlineJudge:/OnlineJudge
+        - /data/OnlineJudgeDeploy/data/test_case:/OnlineJudge/test_case
+        - /tmp:/OnlineJudge/log
+    environment:
+        - TZ=Asia/Shanghai
+        - RSYNC_MODE=slave
+        - RSYNC_MASTER_ADDR=qduoj.com

@@ -1,0 +1,1 @@
+docker run -i -t image_name /bin/bash

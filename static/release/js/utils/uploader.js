@@ -1,0 +1,1 @@
+define("uploader",["webUploader","csrfToken"],function(e,t){function n(n,r,i,s,o){var u=e.create({auto:!0,swf:"/static/img/Uploader.swf",server:r,pick:n,resize:!1,uploadBeforeSend:t,accept:i});return u.on("uploadBeforeSend",t),u.on("uploadSuccess",s),u.on("uploadProgress",o),u}return n});

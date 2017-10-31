@@ -1,0 +1,1 @@
+define("codeMirror",["_codeMirror","codeMirrorClang"],function(e){function t(t,n){return e.fromTextArea(t,{indentUnit:4,lineNumbers:!0,matchBrackets:!0,mode:n})}return t});

@@ -1,0 +1,432 @@
+[2017-09-12 08:42:08,891: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2183, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2172, in _execute
+    connection.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to oj_redis:6379. Connection refused.
+[2017-09-12 08:42:08,909: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error 111 connecting to oj_redis:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2017-09-12 14:37:38,537: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2183, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2172, in _execute
+    connection.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to oj_redis:6379. Connection refused.
+[2017-09-13 20:01:02,113: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2183, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2172, in _execute
+    connection.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to oj_redis:6379. Connection refused.
+[2017-09-13 20:01:02,163: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error 111 connecting to oj_redis:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2017-09-13 20:01:04,688: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error -2 connecting to oj_redis:6379. Name or service not known..
+Trying again in 4.00 seconds...
+
+[2017-09-13 20:01:08,706: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error -2 connecting to oj_redis:6379. Name or service not known..
+Trying again in 6.00 seconds...
+
+[2017-09-14 03:09:07,342: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2183, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2172, in _execute
+    connection.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to oj_redis:6379. Connection refused.
+2017-09-15 03:15:45,951 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: a39499ab8510c6477d3e814d72fe2dda
+[2017-09-15 03:15:45,951: INFO/ForkPoolWorker-8] Contest debug mode, id: 1, submission id: a39499ab8510c6477d3e814d72fe2dda
+2017-09-15 03:16:13,266 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 54c282aab9f9baea3345bf43889879f7
+[2017-09-15 03:16:13,266: INFO/ForkPoolWorker-11] Contest debug mode, id: 1, submission id: 54c282aab9f9baea3345bf43889879f7
+2017-09-15 03:42:23,750 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 6930f4efb2c69ed7908cad6172ef5a25
+[2017-09-15 03:42:23,750: INFO/ForkPoolWorker-2] Contest debug mode, id: 1, submission id: 6930f4efb2c69ed7908cad6172ef5a25
+2017-09-15 03:44:49,604 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 9956c8adf4d323a3d58780b7f840209d
+[2017-09-15 03:44:49,604: INFO/ForkPoolWorker-4] Contest debug mode, id: 1, submission id: 9956c8adf4d323a3d58780b7f840209d
+2017-09-15 10:44:31,321 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 5ecbb975a88a41c29599ade0de76eb2e
+[2017-09-15 10:44:31,321: INFO/ForkPoolWorker-10] Contest debug mode, id: 1, submission id: 5ecbb975a88a41c29599ade0de76eb2e
+2017-09-15 10:52:23,298 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 82d5932938a05f8a6e4bfb8d3335acd8
+[2017-09-15 10:52:23,298: INFO/ForkPoolWorker-3] Contest debug mode, id: 1, submission id: 82d5932938a05f8a6e4bfb8d3335acd8
+2017-09-15 10:54:42,220 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 1, submission id: 8619edbb13266caea19943ae780d06cf
+[2017-09-15 10:54:42,220: INFO/ForkPoolWorker-8] Contest debug mode, id: 1, submission id: 8619edbb13266caea19943ae780d06cf
+2017-09-16 03:09:23,158 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 37f3707be44c2bf79de66068f58c6bc7
+[2017-09-16 03:09:23,158: INFO/ForkPoolWorker-11] Contest debug mode, id: 2, submission id: 37f3707be44c2bf79de66068f58c6bc7
+2017-09-16 03:10:37,057 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 1ea5168a7f9af5227c4c1037330d8943
+[2017-09-16 03:10:37,057: INFO/ForkPoolWorker-2] Contest debug mode, id: 2, submission id: 1ea5168a7f9af5227c4c1037330d8943
+2017-09-16 03:13:33,150 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 94f9a32bc56118eca12d69027af2ff55
+[2017-09-16 03:13:33,150: INFO/ForkPoolWorker-4] Contest debug mode, id: 2, submission id: 94f9a32bc56118eca12d69027af2ff55
+2017-09-16 03:13:51,235 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 0228c181d25e091e4733b447cf856fca
+[2017-09-16 03:13:51,235: INFO/ForkPoolWorker-10] Contest debug mode, id: 2, submission id: 0228c181d25e091e4733b447cf856fca
+2017-09-16 03:14:16,238 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 54152de860b51f3404cf97b2fc7a0756
+[2017-09-16 03:14:16,238: INFO/ForkPoolWorker-3] Contest debug mode, id: 2, submission id: 54152de860b51f3404cf97b2fc7a0756
+2017-09-16 03:14:24,116 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: ef830fc50adaa7ac24e0dd42ba294a1c
+[2017-09-16 03:14:24,116: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: ef830fc50adaa7ac24e0dd42ba294a1c
+2017-09-16 03:15:12,884 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: bf931c003d70e8311b86e14e8511b8b5
+[2017-09-16 03:15:12,884: INFO/ForkPoolWorker-11] Contest debug mode, id: 2, submission id: bf931c003d70e8311b86e14e8511b8b5
+2017-09-16 14:05:33,502 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 76cfb76e224124342948d3f214dcea2a
+[2017-09-16 14:05:33,502: INFO/ForkPoolWorker-2] Contest debug mode, id: 2, submission id: 76cfb76e224124342948d3f214dcea2a
+2017-09-17 03:54:14,647 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 9ecbaaba9a37aa6fabca7d45b2f21578
+[2017-09-17 03:54:14,647: INFO/ForkPoolWorker-4] Contest debug mode, id: 2, submission id: 9ecbaaba9a37aa6fabca7d45b2f21578
+2017-09-17 03:54:27,499 [MainThread:140128321812224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: bb83d32ef94802ffb8cb7bda053f0d68
+[2017-09-17 03:54:27,499: INFO/ForkPoolWorker-10] Contest debug mode, id: 2, submission id: bb83d32ef94802ffb8cb7bda053f0d68
+2017-09-23 03:31:17,559 [MainThread:140092874516224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 2ea8ed6e9aaa19c196bea44afe989957
+[2017-09-23 03:31:17,559: INFO/ForkPoolWorker-5] Contest debug mode, id: 2, submission id: 2ea8ed6e9aaa19c196bea44afe989957
+2017-09-23 07:07:57,570 [MainThread:140092874516224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 28c0615b3666cb791119740ad945fe3f
+[2017-09-23 07:07:57,570: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: 28c0615b3666cb791119740ad945fe3f
+2017-09-23 07:10:39,664 [MainThread:140092874516224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 37326865cd613f039f215b2f5ddba0d5
+[2017-09-23 07:10:39,664: INFO/ForkPoolWorker-11] Contest debug mode, id: 2, submission id: 37326865cd613f039f215b2f5ddba0d5
+2017-09-23 07:14:37,176 [MainThread:140092874516224] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 46723fdc3ee1230a8dda71f71b865df5
+[2017-09-23 07:14:37,176: INFO/ForkPoolWorker-12] Contest debug mode, id: 2, submission id: 46723fdc3ee1230a8dda71f71b865df5
+2017-09-26 00:45:22,605 [MainThread:140086109710080] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 3ab33984243835a5605680505841f25f
+[2017-09-26 00:45:22,605: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: 3ab33984243835a5605680505841f25f
+2017-09-26 01:01:08,899 [MainThread:140086109710080] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 2ec3e8acbf001d2fd4aebb75a5d4902e
+[2017-09-26 01:01:08,899: INFO/ForkPoolWorker-6] Contest debug mode, id: 2, submission id: 2ec3e8acbf001d2fd4aebb75a5d4902e
+2017-09-26 01:05:04,252 [MainThread:140086109710080] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: cad970158de6f9fdd242542c7f7b1a22
+[2017-09-26 01:05:04,252: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: cad970158de6f9fdd242542c7f7b1a22
+2017-10-02 08:17:06,592 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 895537d6f1cd436a35dc4b5a549efa37
+[2017-10-02 08:17:06,592: INFO/ForkPoolWorker-6] Contest debug mode, id: 4, submission id: 895537d6f1cd436a35dc4b5a549efa37
+2017-10-02 08:45:24,215 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: e2d48f7b9141792f6fe8924206d1f611
+[2017-10-02 08:45:24,215: INFO/ForkPoolWorker-12] Contest debug mode, id: 2, submission id: e2d48f7b9141792f6fe8924206d1f611
+2017-10-02 08:46:00,751 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 354dfeb173c66938abd73294a7893509
+[2017-10-02 08:46:00,751: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: 354dfeb173c66938abd73294a7893509
+2017-10-02 08:46:30,572 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 24e1606627b7b431df7b015e858cd8bc
+[2017-10-02 08:46:30,572: INFO/ForkPoolWorker-3] Contest debug mode, id: 2, submission id: 24e1606627b7b431df7b015e858cd8bc
+2017-10-02 08:47:03,025 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: b25c36e3baac39b7c29db6e4716435f6
+[2017-10-02 08:47:03,025: INFO/ForkPoolWorker-2] Contest debug mode, id: 2, submission id: b25c36e3baac39b7c29db6e4716435f6
+2017-10-02 08:52:01,530 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: db5214571cf15037f6d81c9b54df1484
+[2017-10-02 08:52:01,530: INFO/ForkPoolWorker-7] Contest debug mode, id: 5, submission id: db5214571cf15037f6d81c9b54df1484
+2017-10-02 08:57:15,406 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: c138fbf5d8b5ed99a319dee0430c4d15
+[2017-10-02 08:57:15,406: INFO/ForkPoolWorker-6] Contest debug mode, id: 5, submission id: c138fbf5d8b5ed99a319dee0430c4d15
+2017-10-02 08:57:26,314 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: e4d24d6b950842bcb6df72770509f76a
+[2017-10-02 08:57:26,314: INFO/ForkPoolWorker-12] Contest debug mode, id: 5, submission id: e4d24d6b950842bcb6df72770509f76a
+2017-10-02 08:57:43,539 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 0c69a27bd89dcb071b69e6656e4fdc24
+[2017-10-02 08:57:43,539: INFO/ForkPoolWorker-8] Contest debug mode, id: 5, submission id: 0c69a27bd89dcb071b69e6656e4fdc24
+2017-10-02 09:00:15,014 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: d5dabd14f21c4e3f24d7332236da30c3
+[2017-10-02 09:00:15,014: INFO/ForkPoolWorker-3] Contest debug mode, id: 5, submission id: d5dabd14f21c4e3f24d7332236da30c3
+2017-10-02 09:01:18,928 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 16cf51cfd9c2028359ee639cc1ac9318
+[2017-10-02 09:01:18,928: INFO/ForkPoolWorker-2] Contest debug mode, id: 5, submission id: 16cf51cfd9c2028359ee639cc1ac9318
+2017-10-02 09:05:30,337 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 11e8d34ac0d90f0c21e6a3deb7cd92c2
+[2017-10-02 09:05:30,337: INFO/ForkPoolWorker-7] Contest debug mode, id: 5, submission id: 11e8d34ac0d90f0c21e6a3deb7cd92c2
+2017-10-02 09:09:46,931 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 4b4a4fbbf15e8e0624ed931fa74a9ac9
+[2017-10-02 09:09:46,931: INFO/ForkPoolWorker-12] Contest debug mode, id: 5, submission id: 4b4a4fbbf15e8e0624ed931fa74a9ac9
+2017-10-02 12:19:46,013 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 1b3850de1e7e59c734a2bb20fceea2b4
+[2017-10-02 12:19:46,013: INFO/ForkPoolWorker-2] Contest debug mode, id: 5, submission id: 1b3850de1e7e59c734a2bb20fceea2b4
+2017-10-02 12:28:07,514 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 313a6dc4ab2c39b6f474fbf46c933d62
+[2017-10-02 12:28:07,514: INFO/ForkPoolWorker-7] Contest debug mode, id: 5, submission id: 313a6dc4ab2c39b6f474fbf46c933d62
+2017-10-02 12:33:32,159 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 4bf09c01c7257f068f5c6f7e52ce2fdc
+[2017-10-02 12:33:32,159: INFO/ForkPoolWorker-6] Contest debug mode, id: 5, submission id: 4bf09c01c7257f068f5c6f7e52ce2fdc
+2017-10-02 12:41:21,193 [MainThread:140067122894592] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: d2ab91c5a621d5c66237050cc61a3483
+[2017-10-02 12:41:21,193: INFO/ForkPoolWorker-12] Contest debug mode, id: 5, submission id: d2ab91c5a621d5c66237050cc61a3483
+2017-10-08 01:48:29,139 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 3bec9dce8d1d1afbdb2acb25b906571e
+[2017-10-08 01:48:29,139: INFO/ForkPoolWorker-4] Contest debug mode, id: 2, submission id: 3bec9dce8d1d1afbdb2acb25b906571e
+2017-10-08 01:48:49,837 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 11f4f6fa0f446b4fab8a253ec703be25
+[2017-10-08 01:48:49,837: INFO/ForkPoolWorker-12] Contest debug mode, id: 2, submission id: 11f4f6fa0f446b4fab8a253ec703be25
+2017-10-08 01:53:14,574 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: f27d0172ea619f9c013d6a3751fe8a7f
+[2017-10-08 01:53:14,574: INFO/ForkPoolWorker-3] Contest debug mode, id: 2, submission id: f27d0172ea619f9c013d6a3751fe8a7f
+2017-10-08 02:27:01,174 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 32abd24d11294fbeb4cd3f89dc8bae53
+[2017-10-08 02:27:01,174: INFO/ForkPoolWorker-8] Contest debug mode, id: 2, submission id: 32abd24d11294fbeb4cd3f89dc8bae53
+2017-10-08 02:40:29,901 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 24c1d3263112d4bfd047e5f107af6cd1
+[2017-10-08 02:40:29,901: INFO/ForkPoolWorker-4] Contest debug mode, id: 2, submission id: 24c1d3263112d4bfd047e5f107af6cd1
+2017-10-08 02:40:58,844 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: ebb2e55b080ea01caedecb8e2683fe1d
+[2017-10-08 02:40:58,844: INFO/ForkPoolWorker-12] Contest debug mode, id: 2, submission id: ebb2e55b080ea01caedecb8e2683fe1d
+2017-10-12 14:13:45,931 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 7cd8f1a30a64d7a355b4efbac0290236
+[2017-10-12 14:13:45,931: INFO/ForkPoolWorker-7] Contest debug mode, id: 4, submission id: 7cd8f1a30a64d7a355b4efbac0290236
+2017-10-12 14:14:05,549 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 187d81b821fa534fdfeb5ef6c5fa7d3d
+[2017-10-12 14:14:05,549: INFO/ForkPoolWorker-4] Contest debug mode, id: 4, submission id: 187d81b821fa534fdfeb5ef6c5fa7d3d
+2017-10-12 14:14:30,316 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: abd7071777fb61390dbe4527ad659907
+[2017-10-12 14:14:30,316: INFO/ForkPoolWorker-12] Contest debug mode, id: 4, submission id: abd7071777fb61390dbe4527ad659907
+2017-10-12 14:14:53,534 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 35ce2d61d3f0e904b4660a84eb4d4590
+[2017-10-12 14:14:53,534: INFO/ForkPoolWorker-8] Contest debug mode, id: 4, submission id: 35ce2d61d3f0e904b4660a84eb4d4590
+2017-10-12 14:15:16,410 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: 730af22ad5f933e7e4545bc9e085b060
+[2017-10-12 14:15:16,410: INFO/ForkPoolWorker-3] Contest debug mode, id: 7, submission id: 730af22ad5f933e7e4545bc9e085b060
+2017-10-12 14:15:37,105 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: 33370a84767e90a46bcc310e16fe27a6
+[2017-10-12 14:15:37,105: INFO/ForkPoolWorker-2] Contest debug mode, id: 7, submission id: 33370a84767e90a46bcc310e16fe27a6
+2017-10-12 14:16:34,754 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: c55cdb781189af5b9402963ca8b32884
+[2017-10-12 14:16:34,754: INFO/ForkPoolWorker-7] Contest debug mode, id: 7, submission id: c55cdb781189af5b9402963ca8b32884
+2017-10-12 14:18:09,499 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: 5cc162c8042b0a9c9657e70782b44257
+[2017-10-12 14:18:09,499: INFO/ForkPoolWorker-4] Contest debug mode, id: 7, submission id: 5cc162c8042b0a9c9657e70782b44257
+2017-10-12 14:18:41,925 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: bafba0741c6c2a4343f531892f6ca274
+[2017-10-12 14:18:41,925: INFO/ForkPoolWorker-12] Contest debug mode, id: 7, submission id: bafba0741c6c2a4343f531892f6ca274
+2017-10-12 14:19:00,044 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: fb1d6ae2e11de21892edebb3c951aa1f
+[2017-10-12 14:19:00,044: INFO/ForkPoolWorker-8] Contest debug mode, id: 7, submission id: fb1d6ae2e11de21892edebb3c951aa1f
+2017-10-12 14:19:19,143 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: 148f95a9416cd52d98e3ff178ce2b2d1
+[2017-10-12 14:19:19,143: INFO/ForkPoolWorker-3] Contest debug mode, id: 7, submission id: 148f95a9416cd52d98e3ff178ce2b2d1
+2017-10-13 12:34:15,773 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 5ed6bb5e5e651fda6400a27253ca9d34
+[2017-10-13 12:34:15,773: INFO/ForkPoolWorker-4] Contest debug mode, id: 2, submission id: 5ed6bb5e5e651fda6400a27253ca9d34
+2017-10-18 01:44:17,102 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: c57f7205bf7227664ee804f1091bec9d
+[2017-10-18 01:44:17,102: INFO/ForkPoolWorker-4] Contest debug mode, id: 3, submission id: c57f7205bf7227664ee804f1091bec9d
+2017-10-18 01:54:42,743 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: f9421e63978e6a9d8d49d9d187838d21
+[2017-10-18 01:54:42,743: INFO/ForkPoolWorker-12] Contest debug mode, id: 3, submission id: f9421e63978e6a9d8d49d9d187838d21
+2017-10-18 01:55:16,822 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 908a6522c2276b010a7d8790531f9610
+[2017-10-18 01:55:16,822: INFO/ForkPoolWorker-8] Contest debug mode, id: 3, submission id: 908a6522c2276b010a7d8790531f9610
+2017-10-18 01:58:17,011 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 39bec9e707f5abc351d7c6873522fbf6
+[2017-10-18 01:58:17,011: INFO/ForkPoolWorker-3] Contest debug mode, id: 3, submission id: 39bec9e707f5abc351d7c6873522fbf6
+2017-10-18 01:58:32,427 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: b301aaccb050dec967c76e135d6b014d
+[2017-10-18 01:58:32,427: INFO/ForkPoolWorker-2] Contest debug mode, id: 3, submission id: b301aaccb050dec967c76e135d6b014d
+2017-10-18 02:01:37,705 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 15e1306c9a06267d5c5a7e9c30629412
+[2017-10-18 02:01:37,705: INFO/ForkPoolWorker-7] Contest debug mode, id: 3, submission id: 15e1306c9a06267d5c5a7e9c30629412
+2017-10-18 02:02:27,838 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 6b3d1a42d153feaa90377dbcb70e64aa
+[2017-10-18 02:02:27,838: INFO/ForkPoolWorker-4] Contest debug mode, id: 3, submission id: 6b3d1a42d153feaa90377dbcb70e64aa
+2017-10-18 02:02:41,065 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: b33e0100f17bc3680203b6f452691777
+[2017-10-18 02:02:41,065: INFO/ForkPoolWorker-12] Contest debug mode, id: 3, submission id: b33e0100f17bc3680203b6f452691777
+2017-10-18 02:04:15,543 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: c3392b1621abd6feb0c1af951a4d7b93
+[2017-10-18 02:04:15,543: INFO/ForkPoolWorker-8] Contest debug mode, id: 3, submission id: c3392b1621abd6feb0c1af951a4d7b93
+2017-10-18 02:06:12,090 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 87932b9ba9ce400e477f39f8825d2c35
+[2017-10-18 02:06:12,090: INFO/ForkPoolWorker-3] Contest debug mode, id: 3, submission id: 87932b9ba9ce400e477f39f8825d2c35
+2017-10-18 02:07:12,127 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 03b5bde114004afdb323dba5c7cd028e
+[2017-10-18 02:07:12,127: INFO/ForkPoolWorker-2] Contest debug mode, id: 3, submission id: 03b5bde114004afdb323dba5c7cd028e
+2017-10-18 02:08:43,913 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: f934b9612c70c65200db1f8e84d28d4e
+[2017-10-18 02:08:43,913: INFO/ForkPoolWorker-7] Contest debug mode, id: 3, submission id: f934b9612c70c65200db1f8e84d28d4e
+2017-10-18 02:20:11,529 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 82801c146da7e0151fb9232e03924c56
+[2017-10-18 02:20:11,529: INFO/ForkPoolWorker-4] Contest debug mode, id: 3, submission id: 82801c146da7e0151fb9232e03924c56
+2017-10-18 02:21:01,369 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: d5534696ced57814d0a402b583af5bce
+[2017-10-18 02:21:01,369: INFO/ForkPoolWorker-12] Contest debug mode, id: 3, submission id: d5534696ced57814d0a402b583af5bce
+2017-10-18 02:22:22,723 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: 39aa0b41d9f77b312977b3814fc6a3f8
+[2017-10-18 02:22:22,723: INFO/ForkPoolWorker-8] Contest debug mode, id: 3, submission id: 39aa0b41d9f77b312977b3814fc6a3f8
+2017-10-18 02:23:09,661 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 3, submission id: b7a035eb83476c98dd0b6d5bb92524e7
+[2017-10-18 02:23:09,661: INFO/ForkPoolWorker-3] Contest debug mode, id: 3, submission id: b7a035eb83476c98dd0b6d5bb92524e7
+2017-10-18 02:32:09,273 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 5ff99cedea3db60be643741052180b24
+[2017-10-18 02:32:09,273: INFO/ForkPoolWorker-2] Contest debug mode, id: 5, submission id: 5ff99cedea3db60be643741052180b24
+2017-10-18 02:33:48,868 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: ba8423d8ad19632bee8fca14919c7b7c
+[2017-10-18 02:33:48,868: INFO/ForkPoolWorker-7] Contest debug mode, id: 5, submission id: ba8423d8ad19632bee8fca14919c7b7c
+2017-10-18 02:36:16,975 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 5, submission id: 896d2e8d88a7c45abc88312a984759af
+[2017-10-18 02:36:16,975: INFO/ForkPoolWorker-4] Contest debug mode, id: 5, submission id: 896d2e8d88a7c45abc88312a984759af
+2017-10-21 00:00:32,905 [MainThread:139906227005184] [app_info:100] [models:update_rank] [WARNING]- submission 9371b106dc13bdfa87f10fbfce2598ae result is system error, update rank operation is ignored
+[2017-10-21 00:00:32,905: WARNING/ForkPoolWorker-8] submission 9371b106dc13bdfa87f10fbfce2598ae result is system error, update rank operation is ignored
+2017-10-21 01:27:56,886 [MainThread:139906227005184] [app_info:100] [models:update_rank] [WARNING]- submission 4537497ac717b70a5e674e4e93d73ed8 result is system error, update rank operation is ignored
+[2017-10-21 01:27:56,886: WARNING/ForkPoolWorker-2] submission 4537497ac717b70a5e674e4e93d73ed8 result is system error, update rank operation is ignored
+2017-10-21 07:12:02,778 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 2, submission id: 3681506dd83910c1a3da59e68af70aa7
+[2017-10-21 07:12:02,778: INFO/ForkPoolWorker-3] Contest debug mode, id: 2, submission id: 3681506dd83910c1a3da59e68af70aa7
+2017-10-21 12:33:04,760 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 44a5e6f7f18850daead9de979eaeb34f
+[2017-10-21 12:33:04,760: INFO/ForkPoolWorker-8] Contest debug mode, id: 8, submission id: 44a5e6f7f18850daead9de979eaeb34f
+2017-10-21 12:33:22,470 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 366fd67470f864721cb3f0b834e590df
+[2017-10-21 12:33:22,470: INFO/ForkPoolWorker-3] Contest debug mode, id: 8, submission id: 366fd67470f864721cb3f0b834e590df
+2017-10-21 12:33:59,548 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 393bdee895551720207f7187eb1b9da4
+[2017-10-21 12:33:59,548: INFO/ForkPoolWorker-2] Contest debug mode, id: 8, submission id: 393bdee895551720207f7187eb1b9da4
+2017-10-21 12:34:21,213 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 244e2086361332c688c5ec6fafd5c96c
+[2017-10-21 12:34:21,213: INFO/ForkPoolWorker-7] Contest debug mode, id: 8, submission id: 244e2086361332c688c5ec6fafd5c96c
+2017-10-21 12:34:38,808 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 86f3894c1497c8e3214f52aefe9fe21f
+[2017-10-21 12:34:38,808: INFO/ForkPoolWorker-4] Contest debug mode, id: 8, submission id: 86f3894c1497c8e3214f52aefe9fe21f
+2017-10-21 12:35:40,852 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 6, submission id: 8d4b7b853828b51dcb7048fb601a30de
+[2017-10-21 12:35:40,852: INFO/ForkPoolWorker-12] Contest debug mode, id: 6, submission id: 8d4b7b853828b51dcb7048fb601a30de
+2017-10-21 12:36:04,467 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 6, submission id: 49168101445df39d6865cea88af096fc
+[2017-10-21 12:36:04,467: INFO/ForkPoolWorker-8] Contest debug mode, id: 6, submission id: 49168101445df39d6865cea88af096fc
+2017-10-21 12:36:32,144 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 6, submission id: 2a70469a7485d3cf491c48241e740c60
+[2017-10-21 12:36:32,144: INFO/ForkPoolWorker-3] Contest debug mode, id: 6, submission id: 2a70469a7485d3cf491c48241e740c60
+2017-10-21 12:36:57,512 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 6, submission id: b4041106f23292cdc7caf7dc1d8e86e5
+[2017-10-21 12:36:57,512: INFO/ForkPoolWorker-2] Contest debug mode, id: 6, submission id: b4041106f23292cdc7caf7dc1d8e86e5
+2017-10-23 03:00:27,389 [MainThread:139906227005184] [app_info:100] [models:update_rank] [WARNING]- submission 56774791502d6f92f12909dab64daca0 result is system error, update rank operation is ignored
+[2017-10-23 03:00:27,389: WARNING/ForkPoolWorker-7] submission 56774791502d6f92f12909dab64daca0 result is system error, update rank operation is ignored
+2017-10-23 03:01:32,146 [MainThread:139906227005184] [app_info:100] [models:update_rank] [WARNING]- submission 911c3dda84279bf072d65f5c37032f32 result is system error, update rank operation is ignored
+[2017-10-23 03:01:32,146: WARNING/ForkPoolWorker-12] submission 911c3dda84279bf072d65f5c37032f32 result is system error, update rank operation is ignored
+2017-10-25 04:42:05,830 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 0392488a9d4e0f9c72a8f80b3def7ff4
+[2017-10-25 04:42:05,830: INFO/ForkPoolWorker-7] Contest debug mode, id: 4, submission id: 0392488a9d4e0f9c72a8f80b3def7ff4
+2017-10-25 04:44:36,448 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: 19f6e41b4b817dafb9a57b8d09a1e2f1
+[2017-10-25 04:44:36,448: INFO/ForkPoolWorker-12] Contest debug mode, id: 4, submission id: 19f6e41b4b817dafb9a57b8d09a1e2f1
+2017-10-25 04:51:14,872 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: bbb71843fcbc1feed9ff77dfc9a263e6
+[2017-10-25 04:51:14,872: INFO/ForkPoolWorker-8] Contest debug mode, id: 4, submission id: bbb71843fcbc1feed9ff77dfc9a263e6
+2017-10-25 04:51:50,159 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: c4217b04274dbbf62bcaf952e89523a7
+[2017-10-25 04:51:50,159: INFO/ForkPoolWorker-3] Contest debug mode, id: 4, submission id: c4217b04274dbbf62bcaf952e89523a7
+2017-10-25 05:04:13,351 [MainThread:139906227005184] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 4, submission id: e09515ddab3361c86b85f184b4e2356d
+[2017-10-25 05:04:13,351: INFO/ForkPoolWorker-12] Contest debug mode, id: 4, submission id: e09515ddab3361c86b85f184b4e2356d
+[2017-10-26 22:08:52,768: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python2.7/dist-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python2.7/dist-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python2.7/dist-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to oj_redis:6379. Connection refused.
+[2017-10-26 22:08:52,792: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error 111 connecting to oj_redis:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2017-10-26 22:08:55,227: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error -2 connecting to oj_redis:6379. Name or service not known..
+Trying again in 4.00 seconds...
+
+[2017-10-26 22:08:59,246: ERROR/MainProcess] consumer: Cannot connect to redis://oj_redis:6379/2: Error -2 connecting to oj_redis:6379. Name or service not known..
+Trying again in 6.00 seconds...
+
+2017-10-27 10:16:22,198 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 502ccdef28ba07544591db69a6adc1d6
+[2017-10-27 10:16:22,198: INFO/ForkPoolWorker-3] Contest debug mode, id: 9, submission id: 502ccdef28ba07544591db69a6adc1d6
+2017-10-27 10:16:44,010 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: b4f279a6492a3f2f4178d7e02b0c93d6
+[2017-10-27 10:16:44,010: INFO/ForkPoolWorker-7] Contest debug mode, id: 9, submission id: b4f279a6492a3f2f4178d7e02b0c93d6
+2017-10-27 10:17:14,936 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 880350483e4148049f59ebe96b049df7
+[2017-10-27 10:17:14,936: INFO/ForkPoolWorker-4] Contest debug mode, id: 9, submission id: 880350483e4148049f59ebe96b049df7
+2017-10-27 10:17:37,983 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 07616cac14ac2e56e0f907f34c53c31a
+[2017-10-27 10:17:37,983: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: 07616cac14ac2e56e0f907f34c53c31a
+2017-10-27 10:22:51,377 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: f3c331e8e3deaddd204d9e94c8631655
+[2017-10-27 10:22:51,377: INFO/ForkPoolWorker-2] Contest debug mode, id: 9, submission id: f3c331e8e3deaddd204d9e94c8631655
+2017-10-27 10:26:52,528 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 421dd614b902e0f78144d68aaa51d2f5
+[2017-10-27 10:26:52,528: INFO/ForkPoolWorker-3] Contest debug mode, id: 9, submission id: 421dd614b902e0f78144d68aaa51d2f5
+2017-10-27 10:28:47,424 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 6ac77a6a3ede0013590be9a2eb8a9a89
+[2017-10-27 10:28:47,424: INFO/ForkPoolWorker-7] Contest debug mode, id: 9, submission id: 6ac77a6a3ede0013590be9a2eb8a9a89
+2017-10-27 10:31:24,137 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 3906a5c86865dbf6d3230d08b6d15cb1
+[2017-10-27 10:31:24,137: INFO/ForkPoolWorker-4] Contest debug mode, id: 9, submission id: 3906a5c86865dbf6d3230d08b6d15cb1
+2017-10-27 10:31:50,839 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: be2eff4dbf98a14707f14f297a4348ce
+[2017-10-27 10:31:50,839: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: be2eff4dbf98a14707f14f297a4348ce
+2017-10-27 10:35:46,586 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: f1f52d71e36195a76b916aa6752f3ad4
+[2017-10-27 10:35:46,586: INFO/ForkPoolWorker-2] Contest debug mode, id: 9, submission id: f1f52d71e36195a76b916aa6752f3ad4
+2017-10-27 10:36:24,600 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 44741a3f556546e554d3d8daf3a498b8
+[2017-10-27 10:36:24,600: INFO/ForkPoolWorker-3] Contest debug mode, id: 9, submission id: 44741a3f556546e554d3d8daf3a498b8
+2017-10-27 10:36:39,169 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 941d3f822ed8f3637b276f636fd58561
+[2017-10-27 10:36:39,169: INFO/ForkPoolWorker-4] Contest debug mode, id: 9, submission id: 941d3f822ed8f3637b276f636fd58561
+2017-10-27 10:37:20,998 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 6192b049881696de46abc0480390338f
+[2017-10-27 10:37:20,998: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: 6192b049881696de46abc0480390338f
+2017-10-27 10:38:08,016 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: e38713712d39bca545da8f0e0613339c
+[2017-10-27 10:38:08,016: INFO/ForkPoolWorker-8] Contest debug mode, id: 9, submission id: e38713712d39bca545da8f0e0613339c
+2017-10-27 12:42:25,578 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 2e595b262e52cf2806894235678d6854
+[2017-10-27 12:42:25,578: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: 2e595b262e52cf2806894235678d6854
+2017-10-27 12:42:32,214 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 560d9172446e895bd6f423ad6c2749c4
+[2017-10-27 12:42:32,214: INFO/ForkPoolWorker-8] Contest debug mode, id: 9, submission id: 560d9172446e895bd6f423ad6c2749c4
+2017-10-27 16:49:13,010 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 2be3974bf6a39c536298a50b3443d5d7
+[2017-10-27 16:49:13,010: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: 2be3974bf6a39c536298a50b3443d5d7
+2017-10-27 16:49:28,697 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: ffa1f38e15e452a5a76d89663a780810
+[2017-10-27 16:49:28,697: INFO/ForkPoolWorker-8] Contest debug mode, id: 9, submission id: ffa1f38e15e452a5a76d89663a780810
+2017-10-27 16:50:48,087 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 88abe724429d9b00ce71b7628ffc2d71
+[2017-10-27 16:50:48,087: INFO/ForkPoolWorker-2] Contest debug mode, id: 9, submission id: 88abe724429d9b00ce71b7628ffc2d71
+2017-10-27 16:51:18,057 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: d4c5dab9a9465e175599db2966ef76fb
+[2017-10-27 16:51:18,057: INFO/ForkPoolWorker-3] Contest debug mode, id: 9, submission id: d4c5dab9a9465e175599db2966ef76fb
+2017-10-27 20:13:32,567 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 340739516e842fbb995aaf705188d29f
+[2017-10-27 20:13:32,567: INFO/ForkPoolWorker-4] Contest debug mode, id: 9, submission id: 340739516e842fbb995aaf705188d29f
+2017-10-27 20:14:22,871 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: b22542577ad66ef2675d64b9da38e706
+[2017-10-27 20:14:22,871: INFO/ForkPoolWorker-12] Contest debug mode, id: 9, submission id: b22542577ad66ef2675d64b9da38e706
+2017-10-27 20:23:42,767 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 24cc3309926d7e33a61892ef8c0d064b
+[2017-10-27 20:23:42,767: INFO/ForkPoolWorker-2] Contest debug mode, id: 9, submission id: 24cc3309926d7e33a61892ef8c0d064b
+2017-10-27 20:31:37,109 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 4339998bc810c3c52aab0f96344190fd
+[2017-10-27 20:31:37,109: INFO/ForkPoolWorker-3] Contest debug mode, id: 9, submission id: 4339998bc810c3c52aab0f96344190fd
+2017-10-27 20:33:31,150 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 00b54cb2fdc1e4bf04ccc4cb2bf0ed26
+[2017-10-27 20:33:31,150: INFO/ForkPoolWorker-4] Contest debug mode, id: 9, submission id: 00b54cb2fdc1e4bf04ccc4cb2bf0ed26
+2017-10-29 14:43:30,001 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: cf3f5d26b9319dd31d9ca81f3553ccba
+[2017-10-29 14:43:30,001: INFO/ForkPoolWorker-10] Contest debug mode, id: 7, submission id: cf3f5d26b9319dd31d9ca81f3553ccba
+2017-10-29 15:22:30,028 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 7, submission id: 1da375646d66d7c2d979b8ec453c6195
+[2017-10-29 15:22:30,028: INFO/ForkPoolWorker-9] Contest debug mode, id: 7, submission id: 1da375646d66d7c2d979b8ec453c6195
+2017-10-29 21:05:17,579 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: e34c303157c3e4220ddffefbae36910d
+[2017-10-29 21:05:17,579: INFO/ForkPoolWorker-9] Contest debug mode, id: 9, submission id: e34c303157c3e4220ddffefbae36910d
+2017-10-29 21:13:30,950 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: b987abfd9387d6f5a0026612e59901f3
+[2017-10-29 21:13:30,950: INFO/ForkPoolWorker-9] Contest debug mode, id: 9, submission id: b987abfd9387d6f5a0026612e59901f3
+2017-10-29 21:14:51,331 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: ff0efa9d5f99db001cdd788b5f586c98
+[2017-10-29 21:14:51,331: INFO/ForkPoolWorker-10] Contest debug mode, id: 9, submission id: ff0efa9d5f99db001cdd788b5f586c98
+2017-10-29 21:23:17,586 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: a9e02f11bcbb3d8e4bfe4e7ca6895702
+[2017-10-29 21:23:17,586: INFO/ForkPoolWorker-9] Contest debug mode, id: 9, submission id: a9e02f11bcbb3d8e4bfe4e7ca6895702
+2017-10-29 21:30:21,950 [MainThread:139723380201216] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 9, submission id: 79fd9337f67d5c13311cf84e7c5d003c
+[2017-10-29 21:30:21,950: INFO/ForkPoolWorker-6] Contest debug mode, id: 9, submission id: 79fd9337f67d5c13311cf84e7c5d003c
+2017-10-30 09:42:47,940 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 8, submission id: 427acfc5082291799ea0e2169093bbf7
+[2017-10-30 09:42:47,940: INFO/ForkPoolWorker-2] Contest debug mode, id: 8, submission id: 427acfc5082291799ea0e2169093bbf7
+2017-10-30 23:53:23,907 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: 8bc82fc59e26f65d8283b186fce99f3e
+[2017-10-30 23:53:23,907: INFO/ForkPoolWorker-2] Contest debug mode, id: 10, submission id: 8bc82fc59e26f65d8283b186fce99f3e
+2017-10-30 23:53:37,043 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: 87004be888c2ba6351715843f2ab25f7
+[2017-10-30 23:53:37,043: INFO/ForkPoolWorker-5] Contest debug mode, id: 10, submission id: 87004be888c2ba6351715843f2ab25f7
+2017-10-30 23:54:05,550 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: 4f9c1dfda65bae0b557626cf452b1dd0
+[2017-10-30 23:54:05,550: INFO/ForkPoolWorker-6] Contest debug mode, id: 10, submission id: 4f9c1dfda65bae0b557626cf452b1dd0
+2017-10-30 23:54:27,363 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: 9ac9dc299e0599ec9ea1b42728a1e4a0
+[2017-10-30 23:54:27,363: INFO/ForkPoolWorker-9] Contest debug mode, id: 10, submission id: 9ac9dc299e0599ec9ea1b42728a1e4a0
+2017-10-30 23:55:05,767 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: c24da98baf2bc7d1b61fe7659bb4ce31
+[2017-10-30 23:55:05,767: INFO/ForkPoolWorker-12] Contest debug mode, id: 10, submission id: c24da98baf2bc7d1b61fe7659bb4ce31
+2017-10-30 23:55:28,037 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: 73212587612818452e1739226b9522dc
+[2017-10-30 23:55:28,037: INFO/ForkPoolWorker-7] Contest debug mode, id: 10, submission id: 73212587612818452e1739226b9522dc
+2017-10-30 23:55:54,036 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: cb23025d2828e2c294fe497b2bab637e
+[2017-10-30 23:55:54,036: INFO/ForkPoolWorker-2] Contest debug mode, id: 10, submission id: cb23025d2828e2c294fe497b2bab637e
+2017-10-30 23:56:10,215 [MainThread:140162179569408] [app_info:158] [tasks:update_contest_problem_status] [INFO]- Contest debug mode, id: 10, submission id: ccbe17ec4dec2df756dfa4629426bbd4
+[2017-10-30 23:56:10,215: INFO/ForkPoolWorker-5] Contest debug mode, id: 10, submission id: ccbe17ec4dec2df756dfa4629426bbd4

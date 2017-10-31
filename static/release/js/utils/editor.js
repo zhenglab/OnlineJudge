@@ -1,0 +1,1 @@
+define("editor",["simditor"],function(e){function t(t){return new e({textarea:$(t),toolbar:["bold","color","ol","ul","code","link","image"],toolbarFloat:!1,defaultImage:null,upload:{url:"/api/admin/upload_image/",params:null,fileKey:"image",connectionCount:3,leaveConfirm:"正在上传文件，如果离开上传会自动取消"},pasteImage:!0,imageButton:["upload"]})}return t});

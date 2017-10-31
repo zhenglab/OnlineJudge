@@ -1,0 +1,27 @@
+2017-09-12 08:10:26,309 CRIT Supervisor running as root (no user in config file)
+2017-09-12 08:10:26,319 INFO supervisord started with pid 7
+2017-09-12 08:10:27,327 INFO spawned: 'judger_server' with pid 11
+2017-09-12 08:10:32,337 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2017-09-12 14:31:17,854 CRIT Supervisor running as root (no user in config file)
+2017-09-12 14:31:17,878 INFO supervisord started with pid 8
+2017-09-12 14:31:18,893 INFO spawned: 'judger_server' with pid 12
+2017-09-12 14:31:23,936 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2017-09-13 01:46:05,971 CRIT Supervisor running as root (no user in config file)
+2017-09-13 01:46:05,994 INFO supervisord started with pid 7
+2017-09-13 01:46:07,002 INFO spawned: 'judger_server' with pid 11
+2017-09-13 01:46:48,816 CRIT Supervisor running as root (no user in config file)
+2017-09-13 01:46:48,827 INFO supervisord started with pid 7
+2017-09-13 01:46:49,834 INFO spawned: 'judger_server' with pid 11
+2017-09-13 01:46:54,845 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2017-09-14 03:02:20,398 CRIT Supervisor running as root (no user in config file)
+2017-09-14 03:02:20,427 INFO supervisord started with pid 7
+2017-09-14 03:02:21,436 INFO spawned: 'judger_server' with pid 11
+2017-09-14 03:02:26,451 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2017-09-14 03:11:49,155 CRIT Supervisor running as root (no user in config file)
+2017-09-14 03:11:49,178 INFO supervisord started with pid 8
+2017-09-14 03:11:50,185 INFO spawned: 'judger_server' with pid 12
+2017-09-14 03:11:55,204 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2017-10-26 14:04:07,214 CRIT Supervisor running as root (no user in config file)
+2017-10-26 14:04:07,229 INFO supervisord started with pid 7
+2017-10-26 14:04:08,236 INFO spawned: 'judger_server' with pid 11
+2017-10-26 14:04:13,248 INFO success: judger_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
