@@ -12,7 +12,7 @@ from judge.result import result
 from contest.models import ContestProblem, ContestRank, Contest, CONTEST_UNDERWAY
 from problem.models import Problem
 from submission.models import Submission
-from account.models import User
+from account.models import User, UserProfile
 from utils.cache import get_cache_redis
 
 from .models import JudgeServer, JudgeWaitingQueue
@@ -137,6 +137,9 @@ class JudgeDispatcher(object):
             # 之前状态不是ac, 现在是ac了 需要更新用户ac题目数量计数器,这里需要判重
             if problems_status["problems"].get(str(problem.id), -1) != 1 and self.submission.result == result["accepted"]:
                 user.userprofile.add_accepted_problem_number()
+                rank = ContestRank.objects.filter(user=user)
+                profile = UserProfile.objects.get(user=user)
+                profile.flush_accepted_problem_number(rank)
 
             # 之前状态是ac, 现在不是ac了 需要用户ac题目数量计数器-1, 否则上一个逻辑胡重复增加ac计数器
             if problems_status["problems"].get(str(problem.id), -1) == 1 and self.submission.result != result["accepted"]:
@@ -175,7 +178,10 @@ class JudgeDispatcher(object):
             if problems_status["contest_problems"].get(str(contest_problem.id), -1) != 1 and \
                             self.submission.result == result["accepted"]:
                 user.userprofile.add_accepted_problem_number()
-
+                rank = ContestRank.objects.filter(user=user)
+                profile = UserProfile.objects.get(user=user)
+                profile.flush_accepted_problem_number(rank)
+    
             if self.submission.result == result["accepted"]:
                 contest_problem.add_ac_number()
                 problems_status["contest_problems"][str(contest_problem.id)] = 1
