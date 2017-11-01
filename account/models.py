@@ -85,6 +85,12 @@ class UserProfile(models.Model):
     def minus_accepted_problem_number(self):
         self.accepted_problem_number -= 1
         self.save(update_fields=["accepted_problem_number"])
+        
+    def flush_accepted_problem_number(self, rank):
+        self.accepted_problem_number = 0
+        for item in rank:
+            self.accepted_problem_number += item.total_ac_number
+        self.save(update_fields=["accepted_problem_number"])
 
     class Meta:
         db_table = "user_profile"
